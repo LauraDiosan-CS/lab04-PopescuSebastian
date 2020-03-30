@@ -151,18 +151,24 @@
     <ClCompile Include="date.cpp" />
     <ClCompile Include="entity.cpp" />
     <ClCompile Include="Lab4.cpp" />
+    <ClCompile Include="read.cpp" />
+    <ClCompile Include="Redo.cpp" />
     <ClCompile Include="repo.cpp" />
     <ClCompile Include="run.cpp" />
     <ClCompile Include="test.cpp" />
+    <ClCompile Include="Undo.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Controller.h" />
     <ClInclude Include="date.h" />
     <ClInclude Include="entity.h" />
+    <ClInclude Include="read.h" />
+    <ClInclude Include="Redo.h" />
     <ClInclude Include="repo.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="run.h" />
     <ClInclude Include="test.h" />
+    <ClInclude Include="Undo.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

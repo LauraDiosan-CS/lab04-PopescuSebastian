@@ -19,6 +19,10 @@ public:
 	void setYear(int newYear);
 	date& operator = (const date& e);
 	bool operator == (const date& e);
+	bool operator < (const date& e);
+	bool operator <= (const date& e);
+	bool operator > (const date& e);
+	bool operator >= (const date& e);
 	friend ostream& operator<<(ostream& os, const date& s);
 	~date();
 };

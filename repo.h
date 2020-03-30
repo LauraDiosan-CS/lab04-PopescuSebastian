@@ -8,10 +8,11 @@ private:
 public:
 	Repo();
 	~Repo();
-	void addEntity(Product e);
-	void updateEntity(Product e);
-	void deleteEntity(Product e);
+	bool addEntity(Product e);
+	bool updateEntity(Product e);
+	bool deleteEntity(Product e);
 	void update(Product e, int pos);
+	Product getElemByName(char*);
 	Product getElem(int pos);
 	Product* getAll();
 	void setSizeMinusOne();

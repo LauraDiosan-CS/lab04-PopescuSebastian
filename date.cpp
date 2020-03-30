@@ -63,6 +63,76 @@ bool date:: operator==(const date& s) {
 		return false;
 }
 
+bool date::operator < (const date& s) {
+	if (this->year < s.year)
+		return true;
+	else
+		if (this->year == s.year)
+			if (this->month < s.month)
+				return true;
+			else
+				if (this->month == s.month)
+					if (this->day < s.day)
+						return true;
+					else
+						return false;
+				else
+					return false;
+		else
+			return false;
+}
+
+bool date::operator <= (const date& s) {
+	if (this->year < s.year)
+		return true;
+	else
+		if (this->year == s.year)
+			if (this->month < s.month)
+				return true;
+			else
+				if(this->month == s.month)
+					if (this->day <= s.day)
+						return true;
+					else
+						return false;
+				else
+					return false;
+		else
+			return false;
+}
+
+bool date::operator > (const date& s) {
+	if (this->year > s.year)
+		return true;
+	else
+		if (this->year == s.year)
+			if (this->month > s.month)
+				return true;
+			else
+				if (this->month == s.month)
+					if (this->day > s.day)
+						return true;
+					else
+						return false;
+				else
+					return false;
+		else
+			return false;
+}
+
+bool date::operator >= (const date& s) {
+	if (this->year >= s.year)
+		if (this->month >= s.month)
+			if (this->day >= s.day)
+				return true;
+			else
+				return false;
+		else
+			return false;
+	else
+		return false;
+}
+
 ostream& operator<<(ostream& os, const date& d) {
 	os << d.day << "." << d.month << "." << d.year;
 	return os;

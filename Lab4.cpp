@@ -6,8 +6,10 @@
 #include "run.h"
 int main()
 {
+    UI ui;
     runTests();
-    run_program();
+    ui.run();
+    return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
